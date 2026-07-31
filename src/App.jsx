@@ -1,19 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-function Home() {
-  return <h1>Home Page</h1>;
-}
-
-function Events() {
-  return <h1>Events Page</h1>;
-}
+import Layout from './components/layout/Layout';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/events" element={<Events />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          {/* Future routes will go here */}
+        </Route>
       </Routes>
     </BrowserRouter>
   );
