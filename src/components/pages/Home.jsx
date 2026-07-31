@@ -1,11 +1,13 @@
+import HeroSection from '../../components/home/HeroSection';
+import FeaturedEvents from '../../components/home/FeaturedEvents';
+
 const Home = () => {
   return (
-    <div style={{ padding: '4rem 2rem', textAlign: 'center' }}>
-      <h1>Welcome to EventNova</h1>
-      <p style={{ marginTop: '1rem', color: 'var(--text-secondary)' }}>
-        Your modern platform for discovering events. (Hero Section Coming in Day 2)
-      </p>
-    </div>
+    <>
+      <HeroSection />
+      <FeaturedEvents />
+      {/* Additional sections like Testimonials or Newsletter can go here later */}
+    </>
   );
 };
 
