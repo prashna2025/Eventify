@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home/Home';
+import Events from './pages/Events/Events'; // New import
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="events" element={<Events />} /> {/* New route */}
           {/* Future routes will go here */}
         </Route>
       </Routes>
