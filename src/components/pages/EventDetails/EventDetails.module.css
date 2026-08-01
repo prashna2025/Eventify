@@ -1,0 +1,20 @@
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+.backLink { background: none; border: none; color: var(--primary-color); font-size: 1rem; cursor: pointer; margin-bottom: 1rem; font-weight: 500; }
+.hero { height: 400px; border-radius: 16px; background-size: cover; background-position: center; position: relative; overflow: hidden; margin-bottom: 2rem; }
+.overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem; }
+.overlay h1 { color: white; font-size: 3rem; margin: 0; }
+.category { background: var(--primary-color); color: white; width: max-content; padding: 0.25rem 1rem; border-radius: 20px; font-weight: 600; margin-bottom: 1rem; }
+.content { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
+.description { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; margin: 1.5rem 0; }
+.detailsGrid { display: grid; gap: 1.5rem; margin-top: 2rem; }
+.detailItem { display: flex; gap: 1rem; align-items: center; background: var(--surface-color); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color); }
+.icon { font-size: 1.5rem; }
+.detailItem strong { color: var(--text-primary); display: block; }
+.detailItem p { color: var(--text-secondary); margin: 0; }
+.bookingCard { background: var(--surface-color); padding: 2rem; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); position: sticky; top: 100px; }
+.priceRow, .seatsRow { display: flex; justify-content: space-between; margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-secondary); }
+.price { font-size: 1.5rem; font-weight: 700; color: var(--text-primary); }
+.bookBtn { display: block; text-align: center; background: var(--primary-gradient); color: white; padding: 1rem; border-radius: 8px; font-weight: 600; font-size: 1.1rem; margin-top: 2rem; transition: var(--transition); }
+.bookBtn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3); }
+.notFound { text-align: center; padding: 10rem 2rem; }
+@media (max-width: 768px) { .content { grid-template-columns: 1fr; } .overlay h1 { font-size: 2rem; padding: 1.5rem; } }
