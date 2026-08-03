@@ -4,16 +4,16 @@ import { ToastProvider } from './context/ToastContext';
 import ScrollToTop from './components/layout/ScrollToTop';
 import Layout from './components/layout/Layout';
 
-import Home from './pages/Home/Home';
-import Events from './pages/Events/Events';
-import EventDetails from './pages/EventDetails/EventDetails';
-import Categories from './pages/Categories/Categories';
-import BookEvent from './pages/BookEvent/BookEvent';
-import MyBookings from './pages/MyBookings/MyBookings';
-import About from './pages/About/About'; // (Assume created)
-import Contact from './pages/Contact/Contact'; // (Assume created)
-import FAQ from './pages/FAQ/FAQ'; // (Assume created)
-import NotFound from './pages/NotFound/NotFound';
+import Home from './components/pages/Home/Home';
+import Events from './components/pages/Events/Events';
+import EventDetails from './components/pages/EventDetails/EventDetails';
+import Categories from './components/pages/Categories/Categories';
+import BookEvent from './components/pages/BookEvent/BookEvents';
+import MyBookings from './components/pages/MyBookings/MyBookings';
+import About from './components/pages/About/About';
+import Contact from './components/pages/Contact/Contact';
+import FAQ from './components/pages/FAQ/FAQ';
+import NotFound from './components/pages/NotFound/NotFound';
 
 function App() {
   return (
