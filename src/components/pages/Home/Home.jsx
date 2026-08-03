@@ -1,5 +1,5 @@
-import HeroSection from '../../components/home/HeroSection';
-import FeaturedEvents from '../../components/home/FeaturedEvents';
+import HeroSection from '../../home/HeroSection';
+import FeaturedEvents from '../../home/FeaturedEvents';
 
 const Home = () => {
   return (
