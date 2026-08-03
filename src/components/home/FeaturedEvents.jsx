@@ -1,4 +1,4 @@
-import { eventsData } from '../../data/eventsData';
+import { eventsData } from '../data/eventsData';
 import EventCard from '../ui/EventCard';
 import styles from './FeaturedEvents.module.css';
 import { Link } from 'react-router-dom';

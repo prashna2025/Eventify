@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import EventCard from '../../components/ui/EventCard';
-import Pagination from '../../components/ui/Pagination';
+import EventCard from '../../ui/EventCard';
+import Pagination from '../../ui/Pagination';
 import { eventsData } from '../../data/eventsData';
 import styles from './Events.module.css';
 

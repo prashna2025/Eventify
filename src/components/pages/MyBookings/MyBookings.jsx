@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useToast } from '../../context/ToastContext';
+import { useToast } from '../../../context/ToastContext';
 import styles from './MyBookings.module.css';
 
 const MyBookings = () => {
