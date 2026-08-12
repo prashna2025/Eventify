@@ -2,20 +2,19 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDB from './config/db.js';
+import eventRoutes from './routes/eventRoutes.js'; // NEW IMPORT
 
-// Load environment variables
 dotenv.config();
-
-// Connect to Database
 connectDB();
 
 const app = express();
 
-// Middleware
-app.use(cors()); // Allows frontend (port 5173) to communicate with backend (port 5000)
-app.use(express.json()); // Allows us to accept JSON data in the body
+app.use(cors());
+app.use(express.json());
 
-// Basic route to test the server
+// MOUNT ROUTES HERE
+app.use('/api/events', eventRoutes); 
+
 app.get('/', (req, res) => {
   res.send('EventNova API is running...');
 });
