@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.pageNumbers {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button, .pageButton {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button:not(:disabled):hover, .pageButton:hover {
+  background: var(--bg-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.pageButton.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}

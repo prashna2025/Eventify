@@ -1,0 +1,15 @@
+/* src/components/ui/Toast.module.css */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  animation: slideUp 0.3s ease-out forwards;
+  z-index: 1000;
+  font-weight: 500;
+}
+@keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }

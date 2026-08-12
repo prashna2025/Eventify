@@ -1,0 +1,101 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.filterBar {
+  display: flex;
+  gap: 1rem;
+  background: var(--surface-color);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 3rem;
+  border: 1px solid var(--border-color);
+}
+
+.input, .select {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-color);
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.input {
+  flex: 2;
+}
+
+.select {
+  flex: 1;
+}
+
+.input:focus, .select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.noResults {
+  text-align: center;
+  padding: 4rem 0;
+  background: var(--surface-color);
+  border-radius: 12px;
+  border: 1px dashed var(--border-color);
+}
+
+.noResults h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.noResults p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.clearBtn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.clearBtn:hover {
+  background: var(--primary-gradient);
+}
+
+@media (max-width: 768px) {
+  .filterBar {
+    flex-direction: column;
+  }
+}
