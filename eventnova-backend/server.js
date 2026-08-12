@@ -2,7 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDB from './config/db.js';
-import eventRoutes from './routes/eventRoutes.js'; // NEW IMPORT
+import eventRoutes from './routes/eventRoutes.js';
+import bookingRoutes from './routes/bookingRoutes.js'; // NEW IMPORT
 
 dotenv.config();
 connectDB();
@@ -12,8 +13,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// MOUNT ROUTES HERE
-app.use('/api/events', eventRoutes); 
+// MOUNT ROUTES
+app.use('/api/events', eventRoutes);
+app.use('/api/bookings', bookingRoutes); // NEW ROUTE
 
 app.get('/', (req, res) => {
   res.send('EventNova API is running...');
