@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { CalendarDays, Home, PlusCircle, Ticket } from 'lucide-react';
+import { CalendarDays, Home, PlusCircle, Ticket, Info } from 'lucide-react';
 
 const Navbar = () => {
   const location = useLocation();
@@ -17,6 +17,9 @@ const Navbar = () => {
       <div className="nav-links">
         <Link to="/" className={`nav-link ${isActive('/')}`}>
           <Home size={18} /> Home
+        </Link>
+        <Link to="/about" className={`nav-link ${isActive('/about')}`}>
+          <Info size={18} /> About
         </Link>
         <Link to="/bookings" className={`nav-link ${isActive('/bookings')}`}>
           <Ticket size={18} /> My Bookings
